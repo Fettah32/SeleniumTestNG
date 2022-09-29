@@ -1,7 +1,6 @@
-package tests.practice.package05;
+package tests.practice.practice_05;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import utilities.TestBaseBeforeMethodAfterMethod;
