@@ -1,4 +1,4 @@
-package tests.day_18;
+package tests.day_19;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -6,7 +6,8 @@ import pages.hotelMyCampPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-public class C03_ConfigReader {
+public class C02_PositiveTest {
+
     @Test
     public void positiveLoginTest() {
 
@@ -16,11 +17,6 @@ public class C03_ConfigReader {
         Driver.getDriver().get(ConfigReader.getProperty("hotelmycampUrl"));
 
         hotelMyCampPage hmcPage = new hotelMyCampPage();
-
-         /*Page class'ındaki locate'lerimize ulaşabilmek için
-        Page classımızdan bir obje oluşturarak, oluşturmuş olduğumuz obje ile
-        page classımızdaki locate'lerimize ulaşabiliriz
-         */
 
         hmcPage.loginButton.click();
 
